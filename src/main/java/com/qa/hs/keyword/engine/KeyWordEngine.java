@@ -147,6 +147,7 @@ public class KeyWordEngine {
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
+						Assert.assertEquals("User: Mehraj Ismayilov", elementText);
 					}
 					locatorType = null;
 					break;

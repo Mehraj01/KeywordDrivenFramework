@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-26T07:57:25Z" name="Default suite" finished-at="2019-09-26T07:57:47Z" duration-ms="21943">
+  <suite started-at="2019-09-26T08:36:37Z" name="Default suite" finished-at="2019-09-26T08:37:08Z" duration-ms="31175">
     <groups>
     </groups>
-    <test started-at="2019-09-26T07:57:25Z" name="Default test" finished-at="2019-09-26T07:57:47Z" duration-ms="21943">
+    <test started-at="2019-09-26T08:36:37Z" name="Default test" finished-at="2019-09-26T08:37:08Z" duration-ms="31175">
       <class name="com.qa.hs.tests.LoginTest">
-        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@7f9fcf7f]" started-at="2019-09-26T07:57:25Z" name="loginTest" finished-at="2019-09-26T07:57:47Z" duration-ms="21851" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.qa.hs.tests.LoginTest@7f9fcf7f]" started-at="2019-09-26T08:36:37Z" name="loginTest" finished-at="2019-09-26T08:36:58Z" duration-ms="21341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="signUpTest()[pri:0, instance:com.qa.hs.tests.LoginTest@7f9fcf7f]" started-at="2019-09-26T07:57:47Z" name="signUpTest" finished-at="2019-09-26T07:57:47Z" duration-ms="59" status="PASS">
+        <test-method signature="signUpTest()[pri:0, instance:com.qa.hs.tests.LoginTest@7f9fcf7f]" started-at="2019-09-26T08:36:58Z" name="signUpTest" finished-at="2019-09-26T08:37:08Z" duration-ms="9802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpTest -->
