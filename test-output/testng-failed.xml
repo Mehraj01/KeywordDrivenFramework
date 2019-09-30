@@ -6,6 +6,7 @@
       <class name="com.qa.hs.tests.LoginTest">
         <methods>
           <include name="loginTest"/>
+          <include name="signUpTest"/>
         </methods>
       </class> <!-- com.qa.hs.tests.LoginTest -->
     </classes>

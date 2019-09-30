@@ -27,15 +27,14 @@ public class KeyWordEngine {
 	public WebDriver driver;
 	public Properties prop;
 
-	//apache poi api classes
+	// apache poi api classes
 	public static Workbook book;
 	public static Sheet sheet;
 
 	public Base base;
 	public WebElement element;
 
-	public final String SCENARIO_SHEET_PATH = "/Users/mehrajismayilov/git/KeywordDrivenFramework/KeyDrivenFramework"
-			+ "/src/main/java/com/qa/hs/keyword/scenarios/hubspot_scenariosmy.xlsx";
+	public final String SCENARIO_SHEET_PATH = "/Users/mehrajismayilov/KeyDrivenFramework/src/main/java/com/qa/hs/keyword/scenarios/hubspot_scenariosmy.xlsx";
 
 	public void startExecution(String sheetName) {
 
@@ -63,8 +62,8 @@ public class KeyWordEngine {
 				String locatorValue = sheet.getRow(i + 1).getCell(k + 2).toString().trim();
 				String action = sheet.getRow(i + 1).getCell(k + 3).toString().trim();
 				String value = sheet.getRow(i + 1).getCell(k + 4).toString().trim();
-                
-				// case values are  keys thats why it called Keyword Driven Framework
+
+				// case values are keys thats why it called Keyword Driven Framework
 				switch (action) {
 				case "open browser":
 					base = new Base();
@@ -94,18 +93,17 @@ public class KeyWordEngine {
 				switch (locatorType) {
 				case "id":
 					element = driver.findElement(By.id(locatorValue));
-					
+
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
-						
-					
+
 					} else if (action.equalsIgnoreCase("click")) {
 						element.click();
-						
+
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
-						
+
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
@@ -131,19 +129,19 @@ public class KeyWordEngine {
 
 				case "xpath":
 					element = driver.findElement(By.xpath(locatorValue));
-					//WebElement logButn = driver.findElement(By.xpath("//input[@type='submit']"));
-					
+					// WebElement logButn = driver.findElement(By.xpath("//input[@type='submit']"));
+
 					if (action.equalsIgnoreCase("sendkeys")) {
 						element.clear();
 						element.sendKeys(value);
 					} else if (action.equalsIgnoreCase("click")) {
-						//element.click();
+						// element.click();
 						JavascriptExecutor js = (JavascriptExecutor) driver;
 
 						js.executeScript("arguments[0].click();", element);
 					} else if (action.equalsIgnoreCase("isDisplayed")) {
 						element.isDisplayed();
-						
+
 					} else if (action.equalsIgnoreCase("getText")) {
 						String elementText = element.getText();
 						System.out.println("text from element : " + elementText);
